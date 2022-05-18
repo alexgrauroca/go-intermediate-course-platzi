@@ -6,10 +6,7 @@ import (
 )
 
 func main() {
-	e := structs.Employee{}
-	e.SetId(1)
-	e.SetName("Àlex")
-	e.SetLastname1("Grau")
-	e.SetLastname2("Roca")
-	fmt.Printf("%+v\n", e)
+	// Returning a pointer to the instance
+	e := structs.NewEmployee(1, "Àlex", "Grau", "Roca")
+	fmt.Printf("%+v\n", *e)
 }
