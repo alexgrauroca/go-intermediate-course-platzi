@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"go-intermediate-course-platzi/src/structs"
+)
 
 func main() {
-	fmt.Println("hola")
+	e := structs.Employee{}
+	e.SetId(1)
+	e.SetName("Àlex")
+	e.SetLastname1("Grau")
+	e.SetLastname2("Roca")
+	fmt.Printf("%+v\n", e)
 }
