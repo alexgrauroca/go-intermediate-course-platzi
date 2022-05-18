@@ -1,0 +1,8 @@
+vendor
+main
+*.log
+.idea
+tmp
+*.prof
+*.test
+*profile*
